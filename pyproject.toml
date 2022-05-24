@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "graph-ascii-visualization"
+version = "1.0.0"
+description = "Graph Visualization in ASCII"
+authors = ["Paulo Roberto Urio <paulourio@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "graph_ascii"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8, <=3.10.4"
+
+[tool.poetry.group.ci.dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+mypy = "^0.950"
+pycodestyle = "^2.8.0"
+flake8 = "^4.0.1"
+hypothesis = "^6.46.7"
+pylint = "^2.13.9"
+
+[tool.poetry.group.formats.dependencies]
+pydot = {version = "^1.4.2"}
+tensorflow = "^2.9.1"
+
+[tool.poetry.group.local.dependencies]
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
